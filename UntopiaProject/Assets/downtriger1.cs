@@ -1,0 +1,23 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class uptriger : MonoBehaviour
+{
+    
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == Player)
+        {
+            Upcolision.SetActive(false);
+            Downcolision.SetActive(true);
+        }
+
+    }
+
+
+
+
+
+
+}
