@@ -2,16 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class uptriger : MonoBehaviour
+public class uptriger1 : MonoBehaviour
+	
 {
-
-    void OnTriggerEnter(Collider other)
+	public GameObject Upcolision;
+	public GameObject Downcolision;
+	public GameObject charecter;
+	void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.tag == Player)
-        {
-            Upcolision.SetActive(true);
-            Downcolision.SetActive(false);
-        }
+        if (collision.gameObject.tag == "Player"){
+		   Upcolision.SetActive(true);
+		   Downcolision.SetActive(false);
+		   charecter.GetComponent<SpriteRenderer>().sortingOrder = 3;
+		   
+		   
+	   }
 
     }
 

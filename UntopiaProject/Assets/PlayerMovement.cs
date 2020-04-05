@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D rb;
+	private Rigidbody2D rb;
     private float moveH, moveV;
     [SerializeField] private float moveSpeed = 100.0f;
 
-    private void Awake()
+	private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -22,11 +22,5 @@ public class PlayerMovement : MonoBehaviour
         Vector2 direction = new Vector2(moveH, moveV);
     }
 
-        void start()
-        {
-            Upcolision.SetActive(false);
-            Downcolision.SetActive(true);
-            Colision.SetActive(true);
-        }
 
 }
