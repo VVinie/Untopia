@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Uptriger
   - downtriger
+  - Mask
   layers:
   - Default
   - TransparentFX
