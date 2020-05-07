@@ -7,6 +7,8 @@ TagManager:
   - Uptriger
   - downtriger
   - Mask
+  - Enemy
+  - downcol
   layers:
   - Default
   - TransparentFX
@@ -16,9 +18,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - down gun
+  - up gun
+  - bulet
   - 
   - 
   - 

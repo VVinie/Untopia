@@ -9,6 +9,9 @@ public class downtriger1 : MonoBehaviour
 	public GameObject Downcolision;
 	public GameObject charecter;
 	public GameObject undo;
+	public GameObject pistol;
+	public GameObject shootgun;
+	public GameObject rifle;
 	void Start()
 		{
 			
@@ -27,8 +30,11 @@ public class downtriger1 : MonoBehaviour
 		   Downcolision.SetActive(true);
 		   undo.SetActive(true);
 		   charecter.GetComponent<SpriteRenderer>().sortingOrder = 3;
-		   
-	   }
+			pistol.GetComponent<SpriteRenderer>().sortingOrder = 3;
+			shootgun.GetComponent<SpriteRenderer>().sortingOrder = 3;
+			rifle.GetComponent<SpriteRenderer>().sortingOrder = 3;
+
+		}
 
     }
 
