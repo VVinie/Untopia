@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class IsometricPlayerMovementController : MonoBehaviour
 {
 
     public float movementSpeed = 1f;
     IsometricCharacterRenderer isoRenderer;
-
+    public int money = 0;
     Rigidbody2D rbody;
+    [SerializeField]
+    public Text moneye;
 
     private void Awake()
     {
@@ -17,7 +20,6 @@ public class IsometricPlayerMovementController : MonoBehaviour
     }
 
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         Vector2 currentPos = rbody.position;
@@ -29,5 +31,6 @@ public class IsometricPlayerMovementController : MonoBehaviour
         Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
         isoRenderer.SetDirection(movement);
         rbody.MovePosition(newPos);
+        moneye.text = "money:  " + money;
     }
 }

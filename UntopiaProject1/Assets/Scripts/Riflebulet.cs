@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class Riflebulet : MonoBehaviour
 {
-    public float speed;
-    public float destroyTime;
+    public float speed = 20;
+    public float destroyTime = 10;
     public int damage = 3;
 
     void Start()

@@ -5,6 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int hp = 10;
+    public Transform point;
+    public GameObject coin;
 
     public void Takedamage( int damage )
     {
@@ -18,6 +20,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        Instantiate(coin, point.position, transform.rotation);
         Destroy(gameObject);
     }
 }
